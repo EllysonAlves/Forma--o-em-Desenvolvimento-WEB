@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(253, 186, 61);
+        }
+        main{
+            width: 70%;
+            height: 550px;
+            position: relative;
+            top: 50px;
+            margin: 0 auto;
+            box-shadow: 0 0 10px gray;
+            display: flex;
+        }
+        .container2{
+            position: relative;
+            width: 70%;
+            height: 510px;
+            background-color: white;
+            padding: 20px;
+        }
+        .container2 > ul{
+            position: absolute;
+            left: 60px;
+            list-style: none;
+            display: flex;
+
+        }
+        .container1{
+            width: 30%;
+            height: 510px;
+            padding: 20px;
+            background-color: rgb(253, 186, 61);
+        }
+        .container1 > h3{
+            text-align: center;
+            font-size: 25px;
+        }
+        .container2 li a{
+            display: inline-block;
+            background-color: rgb(253, 186, 61);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            font-size: 15px;
+            padding: 15px;
+            text-decoration: none;
+            color:black;
+            
+        }
+        .container2 li a:hover{
+            background-color: black;
+            cursor: pointer;
+            color: white;
+            box-shadow: 0 0 15px rgb(253, 186, 61);
+            
+        }
+        main > img{
+            position: absolute;
+            width: 30%;
+            height: 350px;
+            top: 100px;
+            left: 140px;
+            border-top: solid 5px black;
+            border-bottom: solid 3px black;
+        }
+        .info{
+            position: absolute;
+            width: 75%;
+            top: 110px;
+            left: 150px;
+        }
+        .info > h1{
+            text-align: start;
+            margin-bottom: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .info > p{
+            text-align: start;
+            line-height: 25px;
+            margin-bottom: 30px;
+            
+        }
+        .info > a{
+            text-align: center;
+            width: 30%;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            display: block;
+            background-color: black;
+            padding: 10px;
+            text-decoration: none;
+            color: white;
+        }
+        .info > a:hover{
+            background-color: rgb(253, 186, 61);
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    
+    <main>
+        <div class="container1" >
+            <h3>Loja virtual</h3>
+        </div>
+        
+        <div class="container2" >
+            <ul>
+                <li> <a href="#">Home</a></li>
+                <li> <a href="#">Casual</a></li>
+                <li> <a href="#">Esportivo</a></li>
+                <li> <a href="#">Elegante</a></li>
+                <li> <a href="#">Tradicional</a></li>
+            </ul>
+
+            <div class="info">
+                <h1>Bem-vindo à Loja!</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam velit pariatur labore hic corrupti facere esse in tempora praesentium reiciendis laborum natus, molestias eos asperiores laudantium quasi accusantium tenetur dicta!</p>
+                <a href="#">Ver Produtos</a>
+            </div>
+        </div>
+        <img src="img/modelo.jpg" alt="">
+    </main>
+</body>
+</html>
