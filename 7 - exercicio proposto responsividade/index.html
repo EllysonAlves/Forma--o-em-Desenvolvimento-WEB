@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsividade</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        main{
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        .quadrado1{
+            width: 30%;
+            height: 200px;
+            background-color: lightslategray;
+        }
+        .quadrado2{
+            width: 30%;
+            height: 200px;
+            background-color: lightslategray;
+        }
+        .quadrado3{
+            width: 30%;
+            height: 200px;
+            background-color: lightslategray;
+        }
+
+        /* tablet layout ******************/
+
+        @media (max-width: 768px ) {
+
+            main{
+                flex-wrap: wrap;
+                gap: 20px;
+                padding: 20px;
+            }
+            .quadrado1{
+                width: 48%;
+                background-color: red;
+            }
+            .quadrado2{
+                width: 48%;
+                background-color: red;
+            }
+            .quadrado3{
+                width: 100%;
+                background-color: red;
+            }
+        }
+        @media (max-width: 538px) {
+            main{
+                padding: 20px;
+            }
+            .quadrado1{
+                width: 100%;
+                background-color: blue;
+            }
+            .quadrado2{
+                width: 100%;
+                background-color: blue;
+
+            }
+            .quadrado3{
+                width: 100%;
+                background-color: blue;
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="quadrado1"></section>
+        <section class="quadrado2" ></section>
+        <section class="quadrado3" ></section>
+    </main>
+</body>
+</html>
