@@ -1,0 +1,475 @@
+@font-face {
+    font-family: proximaNova;
+    src: url(../proxima-nova.otf);
+}
+:root{
+    --amarelo: #fff159;
+    --preto-neutro: #222;
+    --branco-neutro: #ebebeb;
+    --cinza-escuro: #424242;
+    --cinza-claro: #9b9a9a;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: var(--preto-neutro);
+    font-family: proximaNova;
+}
+body{
+    background-color: white;
+}
+.cabecalho{
+    width: 100%;
+    height: 100px;
+    background-color: var(--amarelo);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.cabecalho_l1{
+    width: 1195px;
+    height: 50px;
+    display: flex;
+}
+.cabecalho_l1_col1{
+    width: 185px;
+    padding-top: 11px;
+}
+.cabecalho_l1_col2{
+    width: 600px;
+    height: 50px;
+    padding-top: 8px;
+}
+.input_busca{
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0px 1px 1px rgb(165, 165, 0);
+    
+}
+.input_busca input{
+    background-color: white;
+    width: 95%;
+    height: 25px;
+    border: none;
+    padding: 6px;
+    border-right: solid 1px rgb(215, 215, 215);
+
+}
+.input_busca input::placeholder{
+    color: lightgray;
+    font-size: 16px;
+    font-weight: bold;
+}
+.input_busca input:focus{
+    outline: none;
+}
+.lupa{
+    color: var(--cinza-claro);
+    font-size: 15px;
+}
+.input_busca i{
+    padding-left: 15px;
+    padding-right: 8px;
+    color: var(--cinza-claro);
+}
+.cabecalho_l1_col3{
+    padding-top: 9px;
+    padding-right: 16px;
+    width: 410px;
+    display: flex;
+    justify-content: right;
+}
+.cabecalho_l1_col3 img{
+    width: 340px;
+    height: 39px;
+
+}
+.cabecalho_l2{
+    width: 1195px;
+    height: 50px;
+    display: flex;
+}
+.cabecalho_l2_col1{
+    position: relative;
+    padding: 5px;
+    width: 100px;
+    height: 45px;
+}
+.cabecalho_l2_col1:hover{
+    border: solid 1px rgba(128, 128, 128, 0.188); 
+}
+.cabecalho_l2_col1 i{
+    position: absolute;
+    font-size: 23px;
+    top: 10px;
+}
+.informe{
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    font-size: 12px;
+    color: rgb(135, 135, 135);
+}
+.cep{
+    position: absolute;
+    top: 25px;
+    left: 30px;
+    font-size: 13px;
+}
+.cabecalho_l2_col2{
+    position: relative;
+    left: 86px;
+    width: 500px;
+    height: 50px;
+    display: flex;
+    align-items: end;
+}
+.cabecalho_l2_col2 ul{
+    list-style: none;
+    display: flex;
+    gap: 22px;
+    margin-bottom: 12px;
+}
+.cabecalho_l2_col2 a{
+    position: relative;
+    font-size: 14px;
+    text-decoration: none;
+    color: gray;
+}
+.cabecalho_l2_col2 a:hover{
+    color: var(--cinza-escuro);
+}
+.cabecalho_l2_col2 i{
+    position: absolute;
+    top: 2px;
+    font-size: 12px;
+    color: gray;
+}
+.cabecalho_l2_col3{
+    position: relative;
+    left: 310px;
+    display: flex;
+    align-items: end;
+}
+.cabecalho_l2_col3 ul{
+    list-style: none;
+    display: flex;
+    margin-bottom: 13px;
+    gap: 20px;
+}
+.cabecalho_l2_col3 a{
+    text-decoration: none;
+    font-size: 14px;
+    color: var(--preto-neutro);
+}
+.cabecalho_l2_col3 a:hover{
+    color: black;
+}
+.cabecalho_l2_col3 i{
+    font-size: 20px;
+    position: absolute;
+    bottom: 10px;
+}
+.banner img{
+    width: 100%;
+    height: 350px;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    width: 1200px;
+    height: 90px;
+    margin-top: 50px;
+    padding: 5px;
+
+}
+.card_col1{
+    position: relative;
+    width: 250px;
+    height: 80px;
+    border-left: solid 5px rgb(62, 126, 255);
+    border-right: solid 1px rgba(128, 128, 128, 0.379);
+    margin-right: 30px;
+}
+.pagamento{
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    font-size: 18px;
+}
+.commercado{
+    position: absolute;
+    left: 10px;
+    top: 40px;
+    font-size: 14px;
+    color: gray;
+}
+.card_col2{
+    width: 300px;
+    display: flex;
+}
+.texto{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+.texto span{
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 5px;
+}
+.texto a{
+    text-decoration: none;
+    color: rgb(62, 126, 255);
+}
+.card_col3{
+    width: 300px;
+    display: flex;
+}
+.texto2{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    margin-top: 8px;
+}
+.texto2 span{
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 5px;
+}
+.texto2 a{
+    text-decoration: none;
+    color: rgb(62, 126, 255);
+}
+.card_col4{
+    width: 230px;
+    display: flex;
+}
+.texto3{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    margin-top: 8px;
+}
+.texto3 span{
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 5px;
+}
+.texto3 a{
+    text-decoration: none;
+    color: rgb(62, 126, 255);
+}
+.ofertas{
+    margin-top: 50px;
+    width: 1200px;
+}
+.ofertas_titulo{
+    color: gray;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    
+}
+.ofertas_titulo a{
+    color: rgb(62, 126, 255);
+    font-size: 15px;
+    text-decoration: none;
+    margin-left: 10px;
+    letter-spacing: 0px;
+    text-transform: lowercase;
+    font-weight: 100;
+    
+}
+.box_ofertas{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 65px;
+    margin-bottom: 40px;
+    width: 1200px;
+    height: 340px;
+    
+}
+.card_ofertas{
+    border: solid 1px rgba(128, 128, 128, 0.062);
+    border-radius: 5px;
+    width: 220px;
+    height: 450px;
+    transition: 0.5s;
+    position: relative;
+}
+.card_ofertas:hover{
+    box-shadow: 0px 0px 20px rgba(128, 128, 128, 0.329);
+}
+.card_ofertas img{
+    width: 100%;
+    margin-bottom: 15px;
+    border-bottom: solid 1px rgba(128, 128, 128, 0.151);
+}
+.card_ofertas h2{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-weight: 100;
+}
+.preco_riscado{
+    text-decoration: line-through;
+    font-weight: bold;
+    margin-left: 10px;
+    color: gray;
+    font-size: 13px;
+}
+.descricao{
+    margin-top: 10px;
+    font-size: 14px;
+    padding: 10px;
+    color: #222;
+}
+.parcela{
+    font-size: 13px;
+    margin-left: 10px;
+    color: rgb(17, 153, 17);
+}
+.card_ofertas > p{
+    margin-bottom: 5px;
+}
+.preco_desconto{
+    font-size: 12px;
+    margin-left: 10px;
+    color: rgb(1, 146, 1);
+    position: absolute;
+    left: 80px;
+    top: 262px;
+}
+.frete{
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 10px;
+    color: rgb(1, 146, 1);
+}
+.frete > i{
+    color: rgb(1, 146, 1) ;
+    font-size: 13px;
+    margin-left: 5px;
+}
+.descontos{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.descontos_titulo{
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 17px;
+    color: rgb(73, 73, 73);
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+.box_descontos{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 45px;
+}
+.card_descontos{
+    width: 110px;
+    height: 100px;
+    text-align: center;
+}
+.card_descontos > img{
+    width: 80px;
+}
+.card_descontos > p{
+    text-align: center;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+.banner2{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.banner2 > img{
+    width: 90%;
+}
+.box_descontaços{
+    display: flex;
+    justify-content: space-around;
+}
+.box_descontaços img{
+    border-radius: 5px;
+    width: 600px;
+    height: 170px;
+    transition: 0.5s;
+}
+.box_descontaços img:hover{
+    box-shadow: 0px 0px 20px rgba(128, 128, 128, 0.329);
+    cursor: pointer;
+}
+.img_descontaço_1{
+    margin-right: 20px;
+}
+.btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.btn button{
+    width: 15%;
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(0, 119, 255);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+.btn button:hover{
+    cursor: pointer;
+}
+.marcas_titulo{
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 17px;
+    color: rgb(73, 73, 73);
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+.box_marcas{
+    display: flex;
+}
+.card_marcas{
+    width: 150px;
+    text-align: center;
+}
+.card_marcas img{
+    width: 90px;
+}
+.card_marcas p{
+    text-align: center;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
